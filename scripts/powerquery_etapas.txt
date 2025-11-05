@@ -1,0 +1,91 @@
+# ETAPAS DO PROCESSO POWER QUERY — PROJETO DATA ANALYTICS POWER BI
+# Autor: Sérgio Santos
+# Descrição: Este documento detalha todas as etapas do processo de transformação de dados no Power Query.
+
+=============================
+ETAPAS DO PROCESSO ETL (EXTRACT - TRANSFORM - LOAD)
+=============================
+
+1. EXTRACT (Extração)
+-----------------------------
+- Fonte de dados principal: CSV exportado do ERP (vendas.csv)
+- Outras fontes: Tabelas auxiliares (produtos.xlsx, clientes.xlsx, regioes.xlsx)
+- Conexões estabelecidas via Power Query → “Obter Dados”
+
+Código M:
+```m
+let
+    FonteVendas = Csv.Document(File.Contents("C:\Data\vendas.csv"), [Delimiter=",", Columns=8, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+    TabelaVendas = Table.PromoteHeaders(FonteVendas, [PromoteAllScalars=true])
+in
+    TabelaVendas 
+
+
+
+2. TRANSFORM (Transformação)
+
+
+
+
+---
+
+Remoção de colunas desnecessárias
+
+Conversão de tipos (Data, Número, Texto)
+
+Normalização de nomes de produtos e regiões
+
+Criação de colunas derivadas: “Ano”, “Mês”, “Lucro” e “Margem”
+
+Mesclagem das tabelas dimensionais (Produtos, Clientes e Regiões)
+
+
+Código M:   
+
+
+
+
+let
+    AdicionaLucro = Table.AddColumn(TabelaVendas, "Lucro", each [Receita] - [Custo]),
+    AdicionaMargem = Table.AddColumn(AdicionaLucro, "Margem", each Number.Round(([Lucro] / [Receita]) * 100, 2)),
+    ComAno = Table.AddColumn(AdicionaMargem, "Ano", each Date.Year([DataVenda])),
+    ComMes = Table.AddColumn(ComAno, "Mês", each Date.MonthName([DataVenda])),
+    TiposCorrigidos = Table.TransformColumnTypes(ComMes, {{"Receita", type number}, {"Custo", type number}, {"Lucro", type number}, {"Margem", type number}})
+in
+    TiposCorrigidos. 
+
+
+
+
+
+3. LOAD (Carga)
+
+
+
+
+---
+
+Carregamento das tabelas tratadas no modelo Power BI:
+
+FatoVendas
+
+DimProdutos
+
+DimClientes
+
+DimRegioes
+
+
+
+Validações:
+
+Nenhum valor nulo em chaves primárias
+
+Verificação de duplicidades nas dimensões
+
+Total de registros após ETL = total original - exclusões justificadas
+
+
+
+
+
