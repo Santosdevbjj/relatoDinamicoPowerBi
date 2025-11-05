@@ -1,5 +1,3 @@
----
-
 ## 📁 `scripts/modelagem_dados.m`
 ```m
 // MODELAGEM DE DADOS POWER BI — MODELO ESTRELA
