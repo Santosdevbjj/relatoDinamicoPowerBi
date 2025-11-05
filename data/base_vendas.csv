@@ -1,0 +1,21 @@
+Data,Produto,Categoria,Regiao,Vendas,Lucro,Desconto,Quantidade
+2024-01-05,Notebook Pro 15,Eletrônicos,Sudeste,7200,950,0.05,12
+2024-01-10,Smartphone X,Eletrônicos,Sul,5400,700,0.07,15
+2024-01-15,Cadeira Ergonômica,Móveis,Sudeste,3200,400,0.10,8
+2024-01-18,Mesa de Escritório,Móveis,Nordeste,2100,250,0.15,5
+2024-01-20,Monitor 24",Eletrônicos,Norte,3100,380,0.05,9
+2024-02-02,Impressora Laser,Eletrônicos,Centro-Oeste,1900,220,0.12,4
+2024-02-05,Caneta Luxo,Papelaria,Sudeste,600,90,0.03,20
+2024-02-07,Caderno Executivo,Papelaria,Sul,850,120,0.08,18
+2024-02-12,Smartwatch S,Eletrônicos,Nordeste,4600,600,0.09,10
+2024-02-20,Notebook Air 13,Eletrônicos,Sudeste,8800,1200,0.05,14
+2024-02-25,Luminária LED,Móveis,Sul,1750,210,0.06,7
+2024-03-01,Mouse Gamer,Eletrônicos,Norte,1100,150,0.10,10
+2024-03-04,Teclado Mecânico,Eletrônicos,Sudeste,1250,160,0.05,9
+2024-03-10,Pasta de Couro,Papelaria,Nordeste,950,100,0.07,6
+2024-03-15,Webcam HD,Eletrônicos,Centro-Oeste,1800,230,0.05,8
+2024-03-18,Mochila Office,Papelaria,Sudeste,1200,140,0.06,12
+2024-03-25,Headset Pro,Eletrônicos,Sul,2600,300,0.08,10
+2024-03-29,Suporte Monitor,Móveis,Centro-Oeste,900,110,0.09,5
+2024-04-02,Tablet Z10,Eletrônicos,Nordeste,6400,850,0.07,11
+2024-04-05,Cadeira Gamer,Móveis,Sudeste,4500,600,0.05,7
