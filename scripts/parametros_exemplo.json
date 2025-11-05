@@ -1,0 +1,32 @@
+{
+  "configuracao_projeto": {
+    "nome": "Projeto Data Analytics Power BI",
+    "autor": "Sérgio Santos",
+    "data_criacao": "2025-11-05"
+  },
+  "parametros_etl": {
+    "origem_dados": "C:/Data/vendas.csv",
+    "encoding": "UTF-8",
+    "separador": ",",
+    "formato_data": "dd/MM/yyyy"
+  },
+  "parametros_modelo": {
+    "tabelas_fato": ["FatoVendas"],
+    "tabelas_dimensao": ["DimProdutos", "DimClientes", "DimRegioes"],
+    "chaves_primarias": {
+      "FatoVendas": "IDVenda",
+      "DimProdutos": "IDProduto",
+      "DimClientes": "IDCliente",
+      "DimRegioes": "IDRegiao"
+    }
+  },
+  "parametros_visualizacao": {
+    "tema": "Corporate Blue",
+    "moeda": "BRL",
+    "idioma": "pt-BR",
+    "formatos_numericos": {
+      "decimal": ",",
+      "milhar": "."
+    }
+  }
+}
