@@ -3,7 +3,7 @@ Data,Produto,Categoria,Regiao,Vendas,Lucro,Desconto,Quantidade
 2024-01-10,Smartphone X,Eletrônicos,Sul,5400,700,0.07,15
 2024-01-15,Cadeira Ergonômica,Móveis,Sudeste,3200,400,0.10,8
 2024-01-18,Mesa de Escritório,Móveis,Nordeste,2100,250,0.15,5
-2024-01-20,Monitor 24",Eletrônicos,Norte,3100,380,0.05,9
+2024-01-20,Monitor 24,Eletrônicos,Norte,3100,380,0.05,9
 2024-02-02,Impressora Laser,Eletrônicos,Centro-Oeste,1900,220,0.12,4
 2024-02-05,Caneta Luxo,Papelaria,Sudeste,600,90,0.03,20
 2024-02-07,Caderno Executivo,Papelaria,Sul,850,120,0.08,18
