@@ -1,6 +1,7 @@
 ## 📂 **docs/processo_criacao_dashboard.md**
 
 ```markdown
+```
 # 🧭 Processo de Criação do Dashboard
 
 ## 1️⃣ Coleta e Entendimento dos Dados
