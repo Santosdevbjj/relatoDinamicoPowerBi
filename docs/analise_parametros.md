@@ -47,3 +47,25 @@ SWITCH(
     "Lucro", SUM('base_vendas'[Lucro]),
     "Desconto", AVERAGE('base_vendas'[Desconto])
 )
+
+```
+---
+
+
+
+ **Benefícios**
+
+Redução no número de páginas do relatório
+
+Melhor experiência para o usuário final
+
+Facilita a narrativa e o storytelling
+
+
+
+---
+
+🧭 **Conclusão**
+
+Os parâmetros transformam o Power BI de uma ferramenta estática em um ambiente de exploração guiada, permitindo análises dinâmicas e inteligentes sem complexidade adicional.
+
